@@ -10,7 +10,7 @@ target_directory = 'images/'
 
 # See in the config.cfg file for possible values
 config = {
-    'keyword': 'beautiful landscape', # :D hehe have fun my dear friends
+    'keyword': 'apple', # :D hehe have fun my dear friends
     'search_engines': ['yandex', 'google', 'bing', 'yahoo'], # duckduckgo not supported
     'search_type': 'image',
     'scrape_method': 'selenium',

@@ -20,6 +20,11 @@ try:
     from selenium.webdriver.support.ui import WebDriverWait  # available since 2.4.0
     from selenium.webdriver.support import expected_conditions as EC  # available since 2.26.0
     from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+    # update
+    from pyvirtualdisplay import Display
+#    display = Display(visible=0, size=(800, 600))
+#    display.start()
+
 except ImportError as ie:
     print(ie)
     sys.exit('You can install missing modules with `pip3 install [modulename]`')
@@ -634,6 +639,8 @@ class SelScrape(SearchEngineScrape, threading.Thread):
 
         if self.webdriver:
             self.webdriver.quit()
+            # update
+            # display.stop()
 
 
 """
