@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+import sys
 from GoogleScraper import scrape_with_config, GoogleSearchError
 
 # simulating a image search for all search engines that support image search.
 # Then download all found images :)
 
+query = sys.argv[1]
 target_directory = 'images/'
 
 # See in the config.cfg file for possible values
 config = {
-    'keyword': 'apple', # :D hehe have fun my dear friends
+    'keyword': query,
     'search_engines': ['yandex', 'google', 'bing', 'yahoo'], # duckduckgo not supported
     'search_type': 'image',
     'scrape_method': 'selenium',

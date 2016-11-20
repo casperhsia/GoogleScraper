@@ -619,7 +619,9 @@ class SelScrape(SearchEngineScrape, threading.Thread):
 
     def run(self):
         """Run the SelScraper."""
-
+        display = Display(visible=0, size=(800, 600))
+        display.start()
+        
         self._set_xvfb_display()
 
         if not self._get_webdriver():
@@ -639,8 +641,8 @@ class SelScrape(SearchEngineScrape, threading.Thread):
 
         if self.webdriver:
             self.webdriver.quit()
-            # update
-            # display.stop()
+        # update
+        display.stop()
 
 
 """
