@@ -12,7 +12,7 @@ target_directory = 'images/'
 # See in the config.cfg file for possible values
 config = {
     'keyword': query,
-    'search_engines': ['yandex', 'google', 'bing', 'yahoo'], # duckduckgo not supported
+    'search_engines': ['google', 'bing', 'yahoo'], # duckduckgo not supported
     'search_type': 'image',
     'scrape_method': 'selenium',
     'do_caching': True,
